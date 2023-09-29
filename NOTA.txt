@@ -1,0 +1,10 @@
+USER: fazt
+password: 123
+
+tutorial
+Django CRUD con Autenticacion y Despliegue Gratuito (Login,Register, Rutas protegidas, y mas)
+autor: fazt
+https://www.youtube.com/watch?v=e6PkGDH4wWA&t=9903s
+
+estado:
+protect routes 2:13:44
