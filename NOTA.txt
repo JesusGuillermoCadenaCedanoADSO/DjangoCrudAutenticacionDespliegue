@@ -8,3 +8,10 @@ https://www.youtube.com/watch?v=e6PkGDH4wWA&t=9903s
 
 estado:
 protect routes 2:13:44
+
+para poder desplegar en un servidor con postgress se instaló:
+
+dj-database-url
+psycopg2-binary
+whitenoise[brotli]
+gunicorn
