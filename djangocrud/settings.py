@@ -94,16 +94,19 @@ WSGI_APPLICATION = 'djangocrud.wsgi.application'
 
 
 # ver documentacion de dj-database-url para conexion con bases de datos
-DATABASES = {
+# DATABASES = {
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
-    'default' :dj_database_url.config(
-        default='postgresql://postgres:postgres@localhost/postgres',
-        conn_max_age=600,
-        ports="5432"
-    )
+#     'default' :dj_database_url.config(
+#         default='postgresql://postgres:postgres@localhost/postgres',
+#         conn_max_age=600
+#     )
+# }
+DATABASES={}
+DATABASES["default"] = dj_database_url.parse("postgres://django_crud_task_p6gd_user:KGg8edAlCJE9gUliHile9hWlAJv321Bc@dpg-ckemb9ea3ovc73ecaorg-a.oregon-postgres.render.com/django_crud_task_p6gd")
+
 # 'default': {
 #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
 #     'NAME': 'database1',
@@ -112,7 +115,7 @@ DATABASES = {
 #     'HOST': 'localhost',
 #     'PORT': '5432',
 #     }
-}
+
 
 
 # Password validation
