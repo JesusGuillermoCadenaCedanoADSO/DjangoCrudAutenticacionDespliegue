@@ -1,17 +1,36 @@
 USER: fazt
 password: 123
 
-tutorial
+tutoriales
 Django CRUD con Autenticacion y Despliegue Gratuito (Login,Register, Rutas protegidas, y mas)
 autor: fazt
 https://www.youtube.com/watch?v=e6PkGDH4wWA&t=9903s
 
-estado:
-protect routes 2:13:44
+How to Deploy a Django App and Postgres Database to Render
+autor: Pretty Printed
+https://www.youtube.com/watch?v=wczWm8j4v9w
+
 
 para poder desplegar en un servidor con postgress se instaló:
 
-dj-database-url
-psycopg2-binary
-whitenoise[brotli]
-gunicorn
+
+Package                Version
+---------------------- -------
+asgiref                3.7.2
+Brotli                 1.1.0
+distlib                0.3.6
+dj-database-url        2.1.0
+Django                 4.2.2
+filelock               3.12.2
+gunicorn               21.2.0
+mysql-connector-python 8.0.32
+packaging              23.2
+pip                    23.1.2
+platformdirs           3.8.0
+psycopg2-binary        2.9.9
+setuptools             49.2.1
+sqlparse               0.4.4
+typing_extensions      4.6.3
+tzdata                 2023.3
+virtualenv             20.23.1
+whitenoise             6.5.0
