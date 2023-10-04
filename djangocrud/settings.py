@@ -104,8 +104,12 @@ WSGI_APPLICATION = 'djangocrud.wsgi.application'
 #         conn_max_age=600
 #     )
 # }
+database_url = os.environ.get("DATABASE_URL")
 DATABASES={}
-DATABASES["default"] = dj_database_url.parse("postgres://django_crud_task_p6gd_user:KGg8edAlCJE9gUliHile9hWlAJv321Bc@dpg-ckemb9ea3ovc73ecaorg-a.oregon-postgres.render.com/django_crud_task_p6gd")
+# PARA CONEXION LOCAL
+# DATABASES["default"] = dj_database_url.parse("postgres://django_crud_task_p6gd_user:KGg8edAlCJE9gUliHile9hWlAJv321Bc@dpg-ckemb9ea3ovc73ecaorg-a.oregon-postgres.render.com/django_crud_task_p6gd")
+# PARA CONEXION REMOTA
+DATABASES["default"] = dj_database_url.parse(database_url)
 
 # 'default': {
 #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
